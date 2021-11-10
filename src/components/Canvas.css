@@ -1,0 +1,59 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  height: 70vh;
+}
+
+.canvas-container {
+  flex-grow: 1;
+}
+
+.canvas {
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.color-btn-group,
+.size-btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.control-btn {
+  padding: 1rem;
+  width: 6rem;
+  height: 3rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: salmon;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.control-btn:focus {
+  color: white;
+  background-color: salmon;
+}
+
+@media only screen and (max-width: 550px) {
+  .main-container {
+    padding-top: 100px;
+    height: 100vh;
+  }
+  .canvas {
+    transform: rotate(90deg);
+  }
+}
